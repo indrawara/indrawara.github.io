@@ -26,7 +26,13 @@
     
     }
      
-.body{ background-color: antiquewhite;}
+.body{ 
+  background-image: -moz-linear-gradient( 90deg, rgb(237,202,167) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(237,202,167) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(237,202,167) 0%, rgb(255,255,255) 100%);
+
+}
+}
 
                  }
 .container{
@@ -62,22 +68,30 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
+     border-radius: 50px;
+   
 }
 
 
 .topnav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    clear: both;
+    content: "";
+    border-radius: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
 }
 
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color:#7c7c7c;
     color: black;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -85,6 +99,7 @@
     background-color: #4CAF50;
     color: white;
 }
+
 
 .center{
     display: block;
@@ -96,8 +111,8 @@
 .aling{text-align: center;}
 
 
-.margins{margin-right: 200px;
-         margin-left: 200px}
+.margins{margin-right: 5%px;
+         margin-left: 5%px}
 
 .floatright{float: right}
 
@@ -114,8 +129,7 @@
 }
 
 /* changing colors on same paragraph */
-.font{font-family: "Raleway", Arial, sans-serif}
-
+.font{font-family:"Roundhand, cursive"
 .color2{
     color:blue;
     letter-spacing: 2px;
